@@ -109,6 +109,7 @@ export const useContactStore = defineStore('contact', () => {
     chatStore.removeContact(data.roomId)
     // 切换为第一个会话
     globalStore.currentSession.roomId = chatStore.sessionList[0].roomId
+    globalStore.currentSession.type = chatStore.sessionList[0].type
   }
   return {
     getContactList,
