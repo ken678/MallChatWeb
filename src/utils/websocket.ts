@@ -244,7 +244,8 @@ class WS {
             groupStore.filterUser(data.uid)
             // TODO 添加一条退出群聊的消息
           } else {
-            // TODO 添加群成员
+            // 更新群成员列表
+            groupStore.getGroupUserList(true)
             // TODO 添加一条入群的消息
           }
         }
